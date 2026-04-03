@@ -1,0 +1,8 @@
+return_id|order_id|product_id|return_date|reason|refund_amount|status
+R001|1002|P003|2024-01-20|Defective|450|approved
+R002|1005|P001|2024-01-22|Changed mind|75000|approved
+R003|1008|P002|2024-01-25|Wrong item|1200|pending
+R004|1011|P005|2024-01-26|Defective|2500|approved
+R005|9999|P003|bad-date|Defective||pending
+R006|1003|P002|2024-01-28|Not as described|1200|rejected
+R007|1001|P001|2024-01-29|Defective|75000|pending

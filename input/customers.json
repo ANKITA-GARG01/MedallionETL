@@ -1,0 +1,82 @@
+[
+  {
+    "customer_id": "C001",
+    "full_name": "Alice Johnson",
+    "email": "alice@example.com",
+    "city": "Mumbai",
+    "signup_date": "2023-03-10",
+    "tier": "Gold"
+  },
+  {
+    "customer_id": "C002",
+    "full_name": "bob smith",
+    "email": "BOB@EXAMPLE.COM",
+    "city": "delhi",
+    "signup_date": "2023-05-22",
+    "tier": "silver"
+  },
+  {
+    "customer_id": "C003",
+    "full_name": "Carol White",
+    "email": "carol@example.com",
+    "city": "Bangalore",
+    "signup_date": "2023-07-01",
+    "tier": "Gold"
+  },
+  {
+    "customer_id": "C004",
+    "full_name": "",
+    "email": "dave@example.com",
+    "city": "Chennai",
+    "signup_date": "bad-date",
+    "tier": "Bronze"
+  },
+  {
+    "customer_id": "C005",
+    "full_name": "Eve Davis",
+    "email": "eve@example.com",
+    "city": "Hyderabad",
+    "signup_date": "2023-08-14",
+    "tier": "Bronze"
+  },
+  {
+    "customer_id": "C006",
+    "full_name": "Frank Miller",
+    "email": "frank@example.com",
+    "city": "Pune",
+    "signup_date": "2023-09-30",
+    "tier": "Silver"
+  },
+  {
+    "customer_id": "C007",
+    "full_name": "Grace Lee",
+    "email": null,
+    "city": "Kolkata",
+    "signup_date": "2023-11-05",
+    "tier": "Gold"
+  },
+  {
+    "customer_id": "C008",
+    "full_name": "Hank Wilson",
+    "email": "hank@example.com",
+    "city": "Mumbai",
+    "signup_date": "2024-01-02",
+    "tier": "Bronze"
+  },
+  {
+    "customer_id": "C009",
+    "full_name": "Ivy Moore",
+    "email": "ivy@example.com",
+    "city": "delhi",
+    "signup_date": "2024-01-10",
+    "tier": "Silver"
+  },
+  {
+    "customer_id": "C010",
+    "full_name": "Jane Taylor",
+    "email": "jane@example.com",
+    "city": "Bangalore",
+    "signup_date": "2024-01-15",
+    "tier": "Gold"
+  }
+]

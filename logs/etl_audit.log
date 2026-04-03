@@ -1,0 +1,662 @@
+2026-03-30T19:37:58.929990+0530 | INFO | ========================================================
+2026-03-30T19:37:58.930474+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-03-30T19:37:58.930620+0530 | INFO |   SQL Server : localhost / MedallionDB
+2026-03-30T19:37:58.930796+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-03-30T19:37:58.930975+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-03-30T19:37:58.931179+0530 | INFO | ========================================================
+2026-03-30T19:37:58.931363+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-03-30T19:37:58.932421+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-03-30T19:38:15.801716+0530 | ERROR | Pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  (2) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (2)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-30T19:39:13.272642+0530 | INFO | ========================================================
+2026-03-30T19:39:13.273052+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-03-30T19:39:13.273250+0530 | INFO |   SQL Server : localhost / MedallionDB
+2026-03-30T19:39:13.273385+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-03-30T19:39:13.273476+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-03-30T19:39:13.273581+0530 | INFO | ========================================================
+2026-03-30T19:39:13.273707+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-03-30T19:39:13.273846+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-03-30T19:39:30.060763+0530 | ERROR | Pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  (2) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (2)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-30T19:41:37.145551+0530 | INFO | ========================================================
+2026-03-30T19:41:37.145884+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-03-30T19:41:37.146192+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-03-30T19:41:37.146364+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-03-30T19:41:37.146552+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-03-30T19:41:37.146729+0530 | INFO | ========================================================
+2026-03-30T19:41:37.146817+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-03-30T19:41:37.146886+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-03-30T19:41:39.170191+0530 | SUCCESS |   [SQL Server] Created: MedallionDB
+2026-03-30T19:41:40.365440+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-03-30T19:41:40.366476+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-03-30T19:41:40.482503+0530 | ERROR | Pipeline failed: (psycopg2.OperationalError) could not translate host name "1234@localhost" to address: Non-recoverable failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-30T19:45:10.090734+0530 | INFO | ========================================================
+2026-03-30T19:45:10.091163+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-03-30T19:45:10.091322+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-03-30T19:45:10.091480+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-03-30T19:45:10.091665+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-03-30T19:45:10.091824+0530 | INFO | ========================================================
+2026-03-30T19:45:10.091937+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-03-30T19:45:10.092045+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-03-30T19:45:11.836241+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-03-30T19:45:13.110837+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-03-30T19:45:13.111729+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-03-30T19:45:13.144294+0530 | ERROR | Pipeline failed: (psycopg2.OperationalError) could not translate host name "1234@localhost" to address: Non-recoverable failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-30T19:48:34.343646+0530 | INFO | ========================================================
+2026-03-30T19:48:34.343959+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-03-30T19:48:34.344099+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-03-30T19:48:34.344224+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-03-30T19:48:34.344324+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-03-30T19:48:34.344420+0530 | INFO | ========================================================
+2026-03-30T19:48:34.344524+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-03-30T19:48:34.344652+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-03-30T19:48:36.023051+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-03-30T19:48:37.192306+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-03-30T19:48:37.193826+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-03-30T19:48:37.410904+0530 | SUCCESS |   [PostgreSQL] Created: medallion_db
+2026-03-30T19:48:37.462445+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-03-30T19:48:37.464084+0530 | SUCCESS | Both databases ready.
+2026-03-30T19:48:37.466037+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-03-30T19:48:37.467401+0530 | INFO |   Reading: customers.json
+2026-03-30T19:48:37.539435+0530 | ERROR |   Bronze failed for customers.json: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_customers_raw ON bronze.customers USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-30T19:48:37.539798+0530 | INFO |   Reading: orders.csv
+2026-03-30T19:48:37.612182+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-03-30T19:48:37.623208+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-03-30T19:48:37.623545+0530 | INFO |   Reading: products.xlsx
+2026-03-30T19:48:37.807226+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-03-30T19:48:37.812040+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-03-30T19:48:37.812361+0530 | INFO |   Reading: returns.txt
+2026-03-30T19:48:37.824097+0530 | ERROR |   Bronze failed for returns.txt: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_returns_raw ON bronze.returns USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-30T19:48:37.824354+0530 | SUCCESS | Bronze complete.
+2026-03-30T19:48:37.824463+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-03-30T19:48:37.824557+0530 | INFO |   Cleaning: orders → SQL Server
+2026-03-30T19:48:37.870531+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-03-30T19:48:37.872739+0530 | INFO |   Cleaning: products → SQL Server
+2026-03-30T19:48:37.904143+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-03-30T19:48:37.905820+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-03-30T19:48:37.920994+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-03-30T19:48:37.925518+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-03-30T19:48:37.939746+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-03-30T19:48:37.943883+0530 | SUCCESS | Silver complete.
+2026-03-30T19:48:37.944312+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-03-30T19:48:37.944490+0530 | INFO |   All gold tables written to SQL Server
+2026-03-30T19:48:37.944632+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-03-30T19:48:38.000745+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-03-30T19:48:38.005076+0530 | INFO |   Building: gold.product_performance
+2026-03-30T19:48:38.071616+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-03-30T19:48:38.076854+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-03-30T19:48:38.112725+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-03-30T19:48:38.117686+0530 | INFO |   Building: gold.city_revenue_summary
+2026-03-30T19:48:38.138900+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-03-30T19:48:38.143512+0530 | INFO |   Building: gold.return_analysis
+2026-03-30T19:48:38.160841+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-03-30T19:48:38.164689+0530 | SUCCESS | Gold complete.
+2026-03-30T19:48:38.165109+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-03-30T19:48:38.194261+0530 | SUCCESS | Pipeline complete in 3.9s
+2026-03-30T20:07:07.430081+0530 | INFO | ========================================================
+2026-03-30T20:07:07.430569+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-03-30T20:07:07.430848+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-03-30T20:07:07.431024+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-03-30T20:07:07.431212+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-03-30T20:07:07.431420+0530 | INFO | ========================================================
+2026-03-30T20:07:07.431625+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-03-30T20:07:07.431839+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-03-30T20:07:09.084752+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-03-30T20:07:10.176187+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-03-30T20:07:10.176770+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-03-30T20:07:10.261589+0530 | INFO |   [PostgreSQL] Already exists: medallion_db
+2026-03-30T20:07:10.297756+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-03-30T20:07:10.298420+0530 | SUCCESS | Both databases ready.
+2026-03-30T20:07:10.298971+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-03-30T20:07:10.299417+0530 | INFO |   Reading: customers.json
+2026-03-30T20:07:10.389265+0530 | ERROR |   Bronze failed for customers.json: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_customers_raw ON bronze.customers USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-30T20:07:10.389535+0530 | INFO |   Reading: orders.csv
+2026-03-30T20:07:13.238979+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-03-30T20:07:13.245792+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-03-30T20:07:13.246122+0530 | INFO |   Reading: products.xlsx
+2026-03-30T20:07:16.283558+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-03-30T20:07:16.291182+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-03-30T20:07:16.291597+0530 | INFO |   Reading: returns.txt
+2026-03-30T20:07:16.318574+0530 | ERROR |   Bronze failed for returns.txt: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_returns_raw ON bronze.returns USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-30T20:07:16.318865+0530 | SUCCESS | Bronze complete.
+2026-03-30T20:07:16.318979+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-03-30T20:07:16.319072+0530 | INFO |   Cleaning: orders → SQL Server
+2026-03-30T20:07:18.898489+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-03-30T20:07:18.905363+0530 | INFO |   Cleaning: products → SQL Server
+2026-03-30T20:07:18.972827+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-03-30T20:07:18.978505+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-03-30T20:07:19.012600+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-03-30T20:07:19.017342+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-03-30T20:07:19.046169+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-03-30T20:07:19.050188+0530 | SUCCESS | Silver complete.
+2026-03-30T20:07:19.050523+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-03-30T20:07:19.050649+0530 | INFO |   All gold tables written to SQL Server
+2026-03-30T20:07:19.050758+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-03-30T20:07:19.134298+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-03-30T20:07:19.138456+0530 | INFO |   Building: gold.product_performance
+2026-03-30T20:07:19.245145+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-03-30T20:07:19.249262+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-03-30T20:07:19.325122+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-03-30T20:07:19.330480+0530 | INFO |   Building: gold.city_revenue_summary
+2026-03-30T20:07:19.387352+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-03-30T20:07:19.392112+0530 | INFO |   Building: gold.return_analysis
+2026-03-30T20:07:19.444737+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-03-30T20:07:19.449342+0530 | SUCCESS | Gold complete.
+2026-03-30T20:07:19.449674+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-03-30T20:07:19.478492+0530 | SUCCESS | Pipeline complete in 12.0s
+2026-04-01T11:56:01.067254+0530 | INFO | ========================================================
+2026-04-01T11:56:01.068061+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T11:56:01.068284+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T11:56:01.068365+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T11:56:01.068423+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T11:56:01.068474+0530 | INFO | ========================================================
+2026-04-01T11:56:01.068521+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T11:56:01.068687+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T11:56:01.496594+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T11:56:01.915612+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T11:56:01.916871+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T11:56:02.070309+0530 | ERROR | Pipeline failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-01T11:57:03.239966+0530 | INFO | ========================================================
+2026-04-01T11:57:03.240305+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T11:57:03.240550+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T11:57:03.240699+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T11:57:03.240850+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T11:57:03.240955+0530 | INFO | ========================================================
+2026-04-01T11:57:03.241043+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T11:57:03.241135+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T11:57:03.613456+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T11:57:03.888175+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T11:57:03.889154+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T11:57:04.236922+0530 | ERROR | Pipeline failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-01T11:57:28.267262+0530 | INFO | ========================================================
+2026-04-01T11:57:28.268621+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T11:57:28.268858+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T11:57:28.268951+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T11:57:28.269044+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T11:57:28.269108+0530 | INFO | ========================================================
+2026-04-01T11:57:28.269159+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T11:57:28.269294+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T11:57:28.515942+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T11:57:28.730348+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T11:57:28.730906+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T11:57:28.798018+0530 | ERROR | Pipeline failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-01T12:08:31.427743+0530 | INFO | ========================================================
+2026-04-01T12:08:31.428019+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T12:08:31.428173+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T12:08:31.428391+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T12:08:31.428507+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T12:08:31.428569+0530 | INFO | ========================================================
+2026-04-01T12:08:31.428616+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T12:08:31.428665+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T12:08:31.709881+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T12:08:31.968515+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T12:08:31.970752+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T12:08:32.203269+0530 | ERROR | Pipeline failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-01T12:10:48.905927+0530 | INFO | ========================================================
+2026-04-01T12:10:48.906465+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T12:10:48.906856+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T12:10:48.907132+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T12:10:48.907284+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T12:10:48.907490+0530 | INFO | ========================================================
+2026-04-01T12:10:48.907787+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T12:10:48.907977+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T12:10:49.243048+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T12:10:49.491398+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T12:10:49.492512+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T12:10:51.058482+0530 | SUCCESS |   [PostgreSQL] Created: medallion_db
+2026-04-01T12:10:51.359299+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-04-01T12:10:51.359997+0530 | SUCCESS | Both databases ready.
+2026-04-01T12:10:51.361012+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-04-01T12:10:51.362181+0530 | INFO |   Reading: customers.json
+2026-04-01T12:10:51.458877+0530 | ERROR |   Bronze failed for customers.json: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_customers_raw ON bronze.customers USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-01T12:10:51.459162+0530 | INFO |   Reading: orders.csv
+2026-04-01T12:10:51.541540+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-04-01T12:10:51.553758+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-04-01T12:10:51.554143+0530 | INFO |   Reading: products.xlsx
+2026-04-01T12:10:51.765415+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-04-01T12:10:51.770178+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-04-01T12:10:51.770626+0530 | INFO |   Reading: returns.txt
+2026-04-01T12:10:51.782861+0530 | ERROR |   Bronze failed for returns.txt: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_returns_raw ON bronze.returns USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-01T12:10:51.783158+0530 | SUCCESS | Bronze complete.
+2026-04-01T12:10:51.785184+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-04-01T12:10:51.785487+0530 | INFO |   Cleaning: orders → SQL Server
+2026-04-01T12:10:51.842624+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-04-01T12:10:51.843935+0530 | INFO |   Cleaning: products → SQL Server
+2026-04-01T12:10:51.875518+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-04-01T12:10:51.876923+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-04-01T12:10:51.895531+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-04-01T12:10:51.899091+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-04-01T12:10:51.913676+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-04-01T12:10:51.917748+0530 | SUCCESS | Silver complete.
+2026-04-01T12:10:51.919191+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-04-01T12:10:51.919409+0530 | INFO |   All gold tables written to SQL Server
+2026-04-01T12:10:51.919701+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-04-01T12:10:51.977213+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-04-01T12:10:51.980220+0530 | INFO |   Building: gold.product_performance
+2026-04-01T12:10:52.046810+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-04-01T12:10:52.051613+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-04-01T12:10:52.100486+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T12:10:52.105610+0530 | INFO |   Building: gold.city_revenue_summary
+2026-04-01T12:10:52.129480+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T12:10:52.132003+0530 | INFO |   Building: gold.return_analysis
+2026-04-01T12:10:52.149117+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-04-01T12:10:52.152683+0530 | SUCCESS | Gold complete.
+2026-04-01T12:10:52.153127+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-04-01T12:10:52.194892+0530 | SUCCESS | Pipeline complete in 3.3s
+2026-04-01T12:11:41.156785+0530 | INFO | ========================================================
+2026-04-01T12:11:41.157301+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T12:11:41.157588+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T12:11:41.157757+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T12:11:41.157892+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T12:11:41.158037+0530 | INFO | ========================================================
+2026-04-01T12:11:41.158201+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T12:11:41.158331+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T12:11:41.427962+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T12:11:41.683420+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T12:11:41.684766+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T12:11:41.860344+0530 | INFO |   [PostgreSQL] Already exists: medallion_db
+2026-04-01T12:11:41.965595+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-04-01T12:11:41.966653+0530 | SUCCESS | Both databases ready.
+2026-04-01T12:11:41.967439+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-04-01T12:11:41.968694+0530 | INFO |   Reading: customers.json
+2026-04-01T12:11:42.125096+0530 | ERROR |   Bronze failed for customers.json: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_customers_raw ON bronze.customers USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-01T12:11:42.125395+0530 | INFO |   Reading: orders.csv
+2026-04-01T12:11:44.307360+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-04-01T12:11:44.314652+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-04-01T12:11:44.315367+0530 | INFO |   Reading: products.xlsx
+2026-04-01T12:11:44.841386+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-04-01T12:11:44.845235+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-04-01T12:11:44.845830+0530 | INFO |   Reading: returns.txt
+2026-04-01T12:11:44.886070+0530 | ERROR |   Bronze failed for returns.txt: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_returns_raw ON bronze.returns USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-01T12:11:44.886688+0530 | SUCCESS | Bronze complete.
+2026-04-01T12:11:44.887057+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-04-01T12:11:44.887520+0530 | INFO |   Cleaning: orders → SQL Server
+2026-04-01T12:11:45.013088+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-04-01T12:11:45.015462+0530 | INFO |   Cleaning: products → SQL Server
+2026-04-01T12:11:45.087475+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-04-01T12:11:45.089541+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-04-01T12:11:45.141694+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-04-01T12:11:45.146203+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-04-01T12:11:45.213646+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-04-01T12:11:45.219148+0530 | SUCCESS | Silver complete.
+2026-04-01T12:11:45.219834+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-04-01T12:11:45.220444+0530 | INFO |   All gold tables written to SQL Server
+2026-04-01T12:11:45.220883+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-04-01T12:11:45.308621+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-04-01T12:11:45.313927+0530 | INFO |   Building: gold.product_performance
+2026-04-01T12:11:45.445888+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-04-01T12:11:45.450614+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-04-01T12:11:45.524725+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T12:11:45.529191+0530 | INFO |   Building: gold.city_revenue_summary
+2026-04-01T12:11:45.598198+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T12:11:45.603083+0530 | INFO |   Building: gold.return_analysis
+2026-04-01T12:11:45.673625+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-04-01T12:11:45.677813+0530 | SUCCESS | Gold complete.
+2026-04-01T12:11:45.678067+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-04-01T12:11:45.722357+0530 | SUCCESS | Pipeline complete in 4.6s
+2026-04-01T15:08:14.569654+0530 | INFO | ========================================================
+2026-04-01T15:08:14.570638+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T15:08:14.571006+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T15:08:14.571140+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T15:08:14.571257+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T15:08:14.571332+0530 | INFO | ========================================================
+2026-04-01T15:08:14.571416+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T15:08:14.571540+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T15:08:15.008740+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T15:08:15.295334+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T15:08:15.296728+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T15:08:15.856360+0530 | INFO |   [PostgreSQL] Already exists: medallion_db
+2026-04-01T15:08:15.941786+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-04-01T15:08:15.942721+0530 | SUCCESS | Both databases ready.
+2026-04-01T15:08:15.944102+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-04-01T15:08:15.945946+0530 | INFO |   Reading: customers.json
+2026-04-01T15:08:16.489613+0530 | ERROR |   Bronze failed for customers.json: (psycopg2.errors.UndefinedColumn) column "raw_data" does not exist
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_customers_raw ON bronze.customers USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-01T15:08:16.489946+0530 | INFO |   Reading: orders.csv
+2026-04-01T15:08:18.511226+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-04-01T15:08:18.518192+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-04-01T15:08:18.518709+0530 | INFO |   Reading: products.xlsx
+2026-04-01T15:08:19.571530+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-04-01T15:08:19.577060+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-04-01T15:08:19.577642+0530 | INFO |   Reading: returns.txt
+2026-04-01T15:08:19.630545+0530 | ERROR |   Bronze failed for returns.txt: (psycopg2.errors.UndefinedColumn) column "raw_data" does not exist
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_returns_raw ON bronze.returns USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-01T15:08:19.631236+0530 | SUCCESS | Bronze complete.
+2026-04-01T15:08:19.631897+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-04-01T15:08:19.632720+0530 | INFO |   Cleaning: orders → SQL Server
+2026-04-01T15:08:19.750452+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-04-01T15:08:19.754147+0530 | INFO |   Cleaning: products → SQL Server
+2026-04-01T15:08:19.845245+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-04-01T15:08:19.847677+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-04-01T15:08:19.910920+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-04-01T15:08:19.916986+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-04-01T15:08:19.989745+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-04-01T15:08:19.995563+0530 | SUCCESS | Silver complete.
+2026-04-01T15:08:19.996274+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-04-01T15:08:19.996659+0530 | INFO |   All gold tables written to SQL Server
+2026-04-01T15:08:19.997190+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-04-01T15:08:20.090480+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-04-01T15:08:20.096166+0530 | INFO |   Building: gold.product_performance
+2026-04-01T15:08:20.215115+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-04-01T15:08:20.220368+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-04-01T15:08:20.341538+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T15:08:20.346726+0530 | INFO |   Building: gold.city_revenue_summary
+2026-04-01T15:08:20.424656+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T15:08:20.429608+0530 | INFO |   Building: gold.return_analysis
+2026-04-01T15:08:20.501554+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-04-01T15:08:20.506321+0530 | SUCCESS | Gold complete.
+2026-04-01T15:08:20.506803+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-04-01T15:08:20.563689+0530 | SUCCESS | Pipeline complete in 6.0s
+2026-04-01T15:09:17.420390+0530 | INFO | ========================================================
+2026-04-01T15:09:17.420769+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T15:09:17.420970+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T15:09:17.421075+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T15:09:17.421180+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T15:09:17.421353+0530 | INFO | ========================================================
+2026-04-01T15:09:17.421456+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T15:09:17.421573+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T15:09:17.647320+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T15:09:17.853204+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T15:09:17.854089+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T15:09:17.966515+0530 | INFO |   [PostgreSQL] Already exists: medallion_db
+2026-04-01T15:09:18.039706+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-04-01T15:09:18.040645+0530 | SUCCESS | Both databases ready.
+2026-04-01T15:09:18.042097+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-04-01T15:09:18.043015+0530 | INFO |   Reading: customers.json
+2026-04-01T15:09:18.252647+0530 | ERROR |   Bronze failed for customers.json: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_customers_raw ON bronze.customers USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-01T15:09:18.253442+0530 | INFO |   Reading: orders.csv
+2026-04-01T15:09:20.073181+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-04-01T15:09:20.079390+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-04-01T15:09:20.080097+0530 | INFO |   Reading: products.xlsx
+2026-04-01T15:09:20.296603+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-04-01T15:09:20.300955+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-04-01T15:09:20.301563+0530 | INFO |   Reading: returns.txt
+2026-04-01T15:09:20.369900+0530 | ERROR |   Bronze failed for returns.txt: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_returns_raw ON bronze.returns USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-01T15:09:20.370538+0530 | SUCCESS | Bronze complete.
+2026-04-01T15:09:20.370952+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-04-01T15:09:20.371426+0530 | INFO |   Cleaning: orders → SQL Server
+2026-04-01T15:09:20.464335+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-04-01T15:09:20.467911+0530 | INFO |   Cleaning: products → SQL Server
+2026-04-01T15:09:20.548953+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-04-01T15:09:20.551800+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-04-01T15:09:20.621437+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-04-01T15:09:20.626581+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-04-01T15:09:20.691091+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-04-01T15:09:20.696425+0530 | SUCCESS | Silver complete.
+2026-04-01T15:09:20.697072+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-04-01T15:09:20.697624+0530 | INFO |   All gold tables written to SQL Server
+2026-04-01T15:09:20.698190+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-04-01T15:09:20.786065+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-04-01T15:09:20.790606+0530 | INFO |   Building: gold.product_performance
+2026-04-01T15:09:20.895647+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-04-01T15:09:20.900735+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-04-01T15:09:20.999452+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T15:09:21.005020+0530 | INFO |   Building: gold.city_revenue_summary
+2026-04-01T15:09:21.084508+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T15:09:21.089647+0530 | INFO |   Building: gold.return_analysis
+2026-04-01T15:09:22.665344+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-04-01T15:09:22.671124+0530 | SUCCESS | Gold complete.
+2026-04-01T15:09:22.671673+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-04-01T15:09:22.714382+0530 | SUCCESS | Pipeline complete in 5.3s
+2026-04-01T15:23:06.484301+0530 | INFO | ========================================================
+2026-04-01T15:23:06.484961+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T15:23:06.485307+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T15:23:06.485530+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T15:23:06.485711+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T15:23:06.486336+0530 | INFO | ========================================================
+2026-04-01T15:23:06.486610+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T15:23:06.486822+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T15:23:06.736944+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T15:23:06.987934+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T15:23:06.989182+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T15:23:07.246849+0530 | INFO |   [PostgreSQL] Already exists: medallion_db
+2026-04-01T15:23:07.339432+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-04-01T15:23:07.340483+0530 | SUCCESS | Both databases ready.
+2026-04-01T15:23:07.342044+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-04-01T15:23:07.343687+0530 | INFO |   Reading: customers.json
+2026-04-01T15:23:07.681328+0530 | ERROR |   Bronze failed for customers.json: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_customers_raw ON bronze.customers USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-01T15:23:07.681934+0530 | INFO |   Reading: orders.csv
+2026-04-01T15:23:09.519726+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-04-01T15:23:09.527221+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-04-01T15:23:09.527942+0530 | INFO |   Reading: products.xlsx
+2026-04-01T15:23:12.063247+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-04-01T15:23:12.068074+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-04-01T15:23:12.068685+0530 | INFO |   Reading: returns.txt
+2026-04-01T15:23:12.125136+0530 | ERROR |   Bronze failed for returns.txt: (psycopg2.errors.DatatypeMismatch) operator class "jsonb_path_ops" does not accept data type text
+
+[SQL: CREATE INDEX IF NOT EXISTS idx_bronze_returns_raw ON bronze.returns USING GIN (raw_data jsonb_path_ops)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-01T15:23:12.125587+0530 | SUCCESS | Bronze complete.
+2026-04-01T15:23:12.125925+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-04-01T15:23:12.126308+0530 | INFO |   Cleaning: orders → SQL Server
+2026-04-01T15:23:14.361891+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-04-01T15:23:14.366240+0530 | INFO |   Cleaning: products → SQL Server
+2026-04-01T15:23:16.141109+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-04-01T15:23:16.145727+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-04-01T15:23:16.211678+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-04-01T15:23:16.217082+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-04-01T15:23:16.273704+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-04-01T15:23:16.277320+0530 | SUCCESS | Silver complete.
+2026-04-01T15:23:16.277743+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-04-01T15:23:16.278025+0530 | INFO |   All gold tables written to SQL Server
+2026-04-01T15:23:16.278278+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-04-01T15:23:16.354379+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-04-01T15:23:16.358834+0530 | INFO |   Building: gold.product_performance
+2026-04-01T15:23:16.456490+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-04-01T15:23:16.461223+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-04-01T15:23:16.560940+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T15:23:16.566087+0530 | INFO |   Building: gold.city_revenue_summary
+2026-04-01T15:23:16.639514+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T15:23:16.644061+0530 | INFO |   Building: gold.return_analysis
+2026-04-01T15:23:16.714041+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-04-01T15:23:16.719011+0530 | SUCCESS | Gold complete.
+2026-04-01T15:23:16.719348+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-04-01T15:23:16.779536+0530 | SUCCESS | Pipeline complete in 10.3s
+2026-04-01T15:27:14.338299+0530 | INFO | ========================================================
+2026-04-01T15:27:14.338668+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T15:27:14.338787+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T15:27:14.338856+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T15:27:14.338909+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T15:27:14.338976+0530 | INFO | ========================================================
+2026-04-01T15:27:14.339089+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T15:27:14.339151+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T15:27:14.578480+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T15:27:14.821336+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T15:27:14.822668+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T15:27:14.916690+0530 | INFO |   [PostgreSQL] Already exists: medallion_db
+2026-04-01T15:27:14.957565+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-04-01T15:27:14.958266+0530 | SUCCESS | Both databases ready.
+2026-04-01T15:27:14.958966+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-04-01T15:27:14.959798+0530 | INFO |   Reading: customers.json
+2026-04-01T15:27:15.095300+0530 | INFO | [BRONZE] bronze.customers | in=10  out=10  bad=0  PostgreSQL JSONB
+2026-04-01T15:27:15.111290+0530 | INFO |   → PostgreSQL  bronze.customers  (10 rows) [JSONB]
+2026-04-01T15:27:15.112151+0530 | INFO |   Reading: orders.csv
+2026-04-01T15:27:17.016643+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-04-01T15:27:17.021715+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-04-01T15:27:17.022433+0530 | INFO |   Reading: products.xlsx
+2026-04-01T15:27:17.311348+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-04-01T15:27:17.316928+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-04-01T15:27:17.317659+0530 | INFO |   Reading: returns.txt
+2026-04-01T15:27:17.357493+0530 | INFO | [BRONZE] bronze.returns | in=7  out=7  bad=0  PostgreSQL JSONB
+2026-04-01T15:27:17.362258+0530 | INFO |   → PostgreSQL  bronze.returns  (7 rows) [JSONB]
+2026-04-01T15:27:17.362893+0530 | SUCCESS | Bronze complete.
+2026-04-01T15:27:17.363211+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-04-01T15:27:17.363555+0530 | INFO |   Cleaning: orders → SQL Server
+2026-04-01T15:27:17.445192+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-04-01T15:27:17.447994+0530 | INFO |   Cleaning: products → SQL Server
+2026-04-01T15:27:17.525816+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-04-01T15:27:17.528847+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-04-01T15:27:17.602948+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-04-01T15:27:17.607669+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-04-01T15:27:17.658897+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-04-01T15:27:17.663463+0530 | SUCCESS | Silver complete.
+2026-04-01T15:27:17.664148+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-04-01T15:27:17.664756+0530 | INFO |   All gold tables written to SQL Server
+2026-04-01T15:27:17.665807+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-04-01T15:27:19.236537+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-04-01T15:27:19.242244+0530 | INFO |   Building: gold.product_performance
+2026-04-01T15:27:19.358868+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-04-01T15:27:19.363626+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-04-01T15:27:19.465749+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T15:27:19.469720+0530 | INFO |   Building: gold.city_revenue_summary
+2026-04-01T15:27:19.535131+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T15:27:19.539960+0530 | INFO |   Building: gold.return_analysis
+2026-04-01T15:27:19.746651+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-04-01T15:27:19.751103+0530 | SUCCESS | Gold complete.
+2026-04-01T15:27:19.751718+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-04-01T15:27:19.813199+0530 | SUCCESS | Pipeline complete in 5.5s
+2026-04-01T15:45:20.690698+0530 | INFO | ========================================================
+2026-04-01T15:45:20.691289+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-01T15:45:20.691443+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-01T15:45:20.691577+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-01T15:45:20.691678+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-01T15:45:20.691772+0530 | INFO | ========================================================
+2026-04-01T15:45:20.691862+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-01T15:45:20.691959+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-01T15:45:20.934925+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-01T15:45:21.192546+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-01T15:45:21.193905+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-01T15:45:21.351597+0530 | INFO |   [PostgreSQL] Already exists: medallion_db
+2026-04-01T15:45:21.420466+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-04-01T15:45:21.421277+0530 | SUCCESS | Both databases ready.
+2026-04-01T15:45:21.422331+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-04-01T15:45:21.424203+0530 | INFO |   Reading: customers.json
+2026-04-01T15:45:21.597570+0530 | INFO | [BRONZE] bronze.customers | in=10  out=10  bad=0  PostgreSQL JSONB
+2026-04-01T15:45:21.611146+0530 | INFO |   → PostgreSQL  bronze.customers  (10 rows) [JSONB]
+2026-04-01T15:45:21.611532+0530 | INFO |   Reading: orders.csv
+2026-04-01T15:45:23.588899+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-04-01T15:45:23.593503+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-04-01T15:45:23.593838+0530 | INFO |   Reading: products.xlsx
+2026-04-01T15:45:23.870806+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-04-01T15:45:23.875561+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-04-01T15:45:23.876114+0530 | INFO |   Reading: returns.txt
+2026-04-01T15:45:23.933219+0530 | INFO | [BRONZE] bronze.returns | in=7  out=7  bad=0  PostgreSQL JSONB
+2026-04-01T15:45:23.938069+0530 | INFO |   → PostgreSQL  bronze.returns  (7 rows) [JSONB]
+2026-04-01T15:45:23.938772+0530 | SUCCESS | Bronze complete.
+2026-04-01T15:45:23.939221+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-04-01T15:45:23.939684+0530 | INFO |   Cleaning: orders → SQL Server
+2026-04-01T15:45:24.017823+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-04-01T15:45:24.019996+0530 | INFO |   Cleaning: products → SQL Server
+2026-04-01T15:45:24.095196+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-04-01T15:45:24.097522+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-04-01T15:45:24.170825+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-04-01T15:45:24.175747+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-04-01T15:45:24.227275+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-04-01T15:45:24.231899+0530 | SUCCESS | Silver complete.
+2026-04-01T15:45:24.232271+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-04-01T15:45:24.232516+0530 | INFO |   All gold tables written to SQL Server
+2026-04-01T15:45:24.232790+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-04-01T15:45:24.303010+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-04-01T15:45:24.306253+0530 | INFO |   Building: gold.product_performance
+2026-04-01T15:45:24.403449+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-04-01T15:45:24.408143+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-04-01T15:45:24.520220+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T15:45:24.525493+0530 | INFO |   Building: gold.city_revenue_summary
+2026-04-01T15:45:24.605922+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-01T15:45:24.610571+0530 | INFO |   Building: gold.return_analysis
+2026-04-01T15:45:24.685407+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-04-01T15:45:24.690571+0530 | SUCCESS | Gold complete.
+2026-04-01T15:45:24.691255+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-04-01T15:45:24.753576+0530 | SUCCESS | Pipeline complete in 4.1s
+2026-04-03T15:45:55.897248+0530 | INFO | ========================================================
+2026-04-03T15:45:55.897904+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-03T15:45:55.898122+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-03T15:45:55.898399+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-03T15:45:55.898482+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-03T15:45:55.898536+0530 | INFO | ========================================================
+2026-04-03T15:45:55.898582+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-03T15:45:55.898631+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-03T15:45:56.341556+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-03T15:45:56.597413+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-03T15:45:56.598144+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-03T15:45:56.967408+0530 | INFO |   [PostgreSQL] Already exists: medallion_db
+2026-04-03T15:45:57.036803+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-04-03T15:45:57.037270+0530 | SUCCESS | Both databases ready.
+2026-04-03T15:45:57.037891+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-04-03T15:45:57.038924+0530 | INFO |   Reading: customers.json
+2026-04-03T15:45:57.378420+0530 | INFO | [BRONZE] bronze.customers | in=10  out=10  bad=0  PostgreSQL JSONB
+2026-04-03T15:45:57.407232+0530 | INFO |   → PostgreSQL  bronze.customers  (10 rows) [JSONB]
+2026-04-03T15:45:57.408450+0530 | INFO |   Reading: orders.csv
+2026-04-03T15:45:59.387010+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-04-03T15:45:59.392613+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-04-03T15:45:59.393304+0530 | INFO |   Reading: products.xlsx
+2026-04-03T15:45:59.819229+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-04-03T15:45:59.825002+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-04-03T15:45:59.825710+0530 | INFO |   Reading: returns.txt
+2026-04-03T15:45:59.900842+0530 | INFO | [BRONZE] bronze.returns | in=7  out=7  bad=0  PostgreSQL JSONB
+2026-04-03T15:45:59.907964+0530 | INFO |   → PostgreSQL  bronze.returns  (7 rows) [JSONB]
+2026-04-03T15:45:59.908476+0530 | SUCCESS | Bronze complete.
+2026-04-03T15:45:59.908814+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-04-03T15:45:59.909331+0530 | INFO |   Cleaning: orders → SQL Server
+2026-04-03T15:46:00.029510+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-04-03T15:46:00.032526+0530 | INFO |   Cleaning: products → SQL Server
+2026-04-03T15:46:00.120808+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-04-03T15:46:00.123852+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-04-03T15:46:00.184861+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-04-03T15:46:00.189725+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-04-03T15:46:00.267559+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-04-03T15:46:00.273798+0530 | SUCCESS | Silver complete.
+2026-04-03T15:46:00.274563+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-04-03T15:46:00.275638+0530 | INFO |   All gold tables written to SQL Server
+2026-04-03T15:46:00.276168+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-04-03T15:46:00.376214+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-04-03T15:46:00.380530+0530 | INFO |   Building: gold.product_performance
+2026-04-03T15:46:00.496890+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-04-03T15:46:00.502014+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-04-03T15:46:00.608022+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-03T15:46:00.612805+0530 | INFO |   Building: gold.city_revenue_summary
+2026-04-03T15:46:00.688905+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-03T15:46:00.693861+0530 | INFO |   Building: gold.return_analysis
+2026-04-03T15:46:00.768294+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-04-03T15:46:00.773451+0530 | SUCCESS | Gold complete.
+2026-04-03T15:46:00.774158+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-04-03T15:46:00.839646+0530 | SUCCESS | Pipeline complete in 4.9s
