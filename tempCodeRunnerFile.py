@@ -1,1 +1,1 @@
-jsonb_path_ops
+path

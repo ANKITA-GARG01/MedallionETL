@@ -660,3 +660,56 @@
 2026-04-03T15:46:00.773451+0530 | SUCCESS | Gold complete.
 2026-04-03T15:46:00.774158+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
 2026-04-03T15:46:00.839646+0530 | SUCCESS | Pipeline complete in 4.9s
+2026-04-05T20:15:44.999752+0530 | INFO | ========================================================
+2026-04-05T20:15:45.000020+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T20:15:45.000286+0530 | INFO |   SQL Server : localhost / MedallionDB
+2026-04-05T20:15:45.000408+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T20:15:45.000485+0530 | INFO |   Input      : C:\MedallionETL\input
+2026-04-05T20:15:45.000538+0530 | INFO | ========================================================
+2026-04-05T20:15:45.000584+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T20:15:45.000631+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T20:15:45.462603+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-05T20:15:45.735176+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-05T20:15:45.736419+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-05T20:15:46.230403+0530 | INFO |   [PostgreSQL] Already exists: medallion_db
+2026-04-05T20:15:46.412791+0530 | SUCCESS |   [PostgreSQL] Schemas ready: bronze | silver
+2026-04-05T20:15:46.413310+0530 | SUCCESS | Both databases ready.
+2026-04-05T20:15:46.414273+0530 | INFO | ══ BRONZE ═══════════════════════════════════════════════
+2026-04-05T20:15:46.415006+0530 | INFO |   Reading: customers.json
+2026-04-05T20:15:46.619602+0530 | INFO | [BRONZE] bronze.customers | in=10  out=10  bad=0  PostgreSQL JSONB
+2026-04-05T20:15:46.650982+0530 | INFO |   → PostgreSQL  bronze.customers  (10 rows) [JSONB]
+2026-04-05T20:15:46.651816+0530 | INFO |   Reading: orders.csv
+2026-04-05T20:15:49.613273+0530 | INFO | [BRONZE] bronze.orders | in=15  out=15  bad=0  
+2026-04-05T20:15:49.621744+0530 | INFO |   → SQL Server  bronze.orders  (15 rows)
+2026-04-05T20:15:49.622506+0530 | INFO |   Reading: products.xlsx
+2026-04-05T20:15:49.906146+0530 | INFO | [BRONZE] bronze.products | in=10  out=10  bad=0  
+2026-04-05T20:15:49.913382+0530 | INFO |   → SQL Server  bronze.products  (10 rows)
+2026-04-05T20:15:49.914069+0530 | INFO |   Reading: returns.txt
+2026-04-05T20:15:49.989058+0530 | INFO | [BRONZE] bronze.returns | in=7  out=7  bad=0  PostgreSQL JSONB
+2026-04-05T20:15:49.996805+0530 | INFO |   → PostgreSQL  bronze.returns  (7 rows) [JSONB]
+2026-04-05T20:15:49.997545+0530 | SUCCESS | Bronze complete.
+2026-04-05T20:15:49.998042+0530 | INFO | ══ SILVER ═══════════════════════════════════════════════
+2026-04-05T20:15:49.998597+0530 | INFO |   Cleaning: orders → SQL Server
+2026-04-05T20:15:50.128233+0530 | INFO | [SILVER] silver.orders | in=15  out=15  bad=0  
+2026-04-05T20:15:50.132337+0530 | INFO |   Cleaning: products → SQL Server
+2026-04-05T20:15:50.233735+0530 | INFO | [SILVER] silver.products | in=10  out=10  bad=0  
+2026-04-05T20:15:50.237580+0530 | INFO |   Cleaning: customers → PostgreSQL
+2026-04-05T20:15:50.310713+0530 | INFO | [SILVER] silver.customers | in=10  out=10  bad=0  PostgreSQL
+2026-04-05T20:15:50.317376+0530 | INFO |   Cleaning: returns → PostgreSQL
+2026-04-05T20:15:50.379141+0530 | INFO | [SILVER] silver.returns | in=7  out=6  bad=1  PostgreSQL
+2026-04-05T20:15:50.385764+0530 | SUCCESS | Silver complete.
+2026-04-05T20:15:50.386591+0530 | INFO | ══ GOLD ═════════════════════════════════════════════════
+2026-04-05T20:15:50.387491+0530 | INFO |   All gold tables written to SQL Server
+2026-04-05T20:15:50.388246+0530 | INFO |   Building: gold.daily_revenue_summary
+2026-04-05T20:15:50.501167+0530 | INFO | [GOLD] gold.daily_revenue_summary | in=13  out=13  bad=0  Source: SQL Server silver.orders
+2026-04-05T20:15:50.507459+0530 | INFO |   Building: gold.product_performance
+2026-04-05T20:15:50.660756+0530 | INFO | [GOLD] gold.product_performance | in=10  out=10  bad=0  Source: SQL Server silver
+2026-04-05T20:15:50.667117+0530 | INFO |   Building: gold.customer_lifetime_value
+2026-04-05T20:15:50.780593+0530 | INFO | [GOLD] gold.customer_lifetime_value | in=10  out=10  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-05T20:15:50.786672+0530 | INFO |   Building: gold.city_revenue_summary
+2026-04-05T20:15:50.881355+0530 | INFO | [GOLD] gold.city_revenue_summary | in=7  out=7  bad=0  Cross-DB: customers(PostgreSQL) + orders(SQL Server)
+2026-04-05T20:15:50.888791+0530 | INFO |   Building: gold.return_analysis
+2026-04-05T20:15:50.978553+0530 | INFO | [GOLD] gold.return_analysis | in=5  out=5  bad=0  Source: PostgreSQL silver.returns → written to SQL Server
+2026-04-05T20:15:50.985935+0530 | SUCCESS | Gold complete.
+2026-04-05T20:15:50.986607+0530 | INFO | ══ SUMMARY ══════════════════════════════════════════════
+2026-04-05T20:15:51.044840+0530 | SUCCESS | Pipeline complete in 6.0s

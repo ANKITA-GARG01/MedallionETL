@@ -1,0 +1,129 @@
+2026-04-05T19:31:02.573992+0530 | INFO | ========================================================
+2026-04-05T19:31:02.575591+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T19:31:02.575951+0530 | INFO |   SQL Server : .\\SQLEXPRESS / MedallionDB
+2026-04-05T19:31:02.576308+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T19:31:02.576591+0530 | INFO |   Input      : input
+2026-04-05T19:31:02.576872+0530 | INFO | ========================================================
+2026-04-05T19:31:02.577192+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T19:31:02.577541+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T19:31:02.577800+0530 | ERROR | Pipeline failed: module 'config' has no attribute 'get_ss_master_connection_string'
+2026-04-05T19:39:13.983031+0530 | INFO | ========================================================
+2026-04-05T19:39:13.983521+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T19:39:13.983700+0530 | INFO |   SQL Server : .\\SQLEXPRESS / MedallionDB
+2026-04-05T19:39:13.983797+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T19:39:13.983883+0530 | INFO |   Input      : input
+2026-04-05T19:39:13.984082+0530 | INFO | ========================================================
+2026-04-05T19:39:13.984246+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T19:39:13.984380+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T19:39:13.984480+0530 | ERROR | Pipeline failed: module 'config' has no attribute 'get_ss_master_connection_string'
+2026-04-05T19:40:53.798092+0530 | INFO | ========================================================
+2026-04-05T19:40:53.798439+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T19:40:53.798622+0530 | INFO |   SQL Server : .\\SQLEXPRESS / MedallionDB
+2026-04-05T19:40:53.798725+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T19:40:53.798797+0530 | INFO |   Input      : input
+2026-04-05T19:40:53.798856+0530 | INFO | ========================================================
+2026-04-05T19:40:53.799042+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T19:40:53.799236+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T19:40:53.929598+0530 | ERROR | Pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]The client cannot connect to the server because the requested instance was not available. Use SQL Server Configuration Manager to make sure the SQL Server instance is configured correctly.  (0) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05T19:45:45.697371+0530 | INFO | ========================================================
+2026-04-05T19:45:45.697680+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T19:45:45.697897+0530 | INFO |   SQL Server : .\\SQLEXPRESS / MedallionDB
+2026-04-05T19:45:45.698050+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T19:45:45.698197+0530 | INFO |   Input      : input
+2026-04-05T19:45:45.698351+0530 | INFO | ========================================================
+2026-04-05T19:45:45.698494+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T19:45:45.698599+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T19:45:45.728934+0530 | ERROR | Pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]The client cannot connect to the server because the requested instance was not available. Use SQL Server Configuration Manager to make sure the SQL Server instance is configured correctly.  (0) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05T19:46:54.813407+0530 | INFO | ========================================================
+2026-04-05T19:46:54.813865+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T19:46:54.813987+0530 | INFO |   SQL Server : .\\SQLEXPRESS / MedallionDB
+2026-04-05T19:46:54.814055+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T19:46:54.814111+0530 | INFO |   Input      : input
+2026-04-05T19:46:54.814223+0530 | INFO | ========================================================
+2026-04-05T19:46:54.814280+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T19:46:54.814334+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T19:46:54.842601+0530 | ERROR | Pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]The client cannot connect to the server because the requested instance was not available. Use SQL Server Configuration Manager to make sure the SQL Server instance is configured correctly.  (0) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05T19:50:01.572090+0530 | INFO | ========================================================
+2026-04-05T19:50:01.572462+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T19:50:01.572609+0530 | INFO |   SQL Server : .\\SQLEXPRESS / MedallionDB
+2026-04-05T19:50:01.572701+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T19:50:01.572766+0530 | INFO |   Input      : input
+2026-04-05T19:50:01.572824+0530 | INFO | ========================================================
+2026-04-05T19:50:01.572880+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T19:50:01.572934+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T19:50:16.592145+0530 | ERROR | Pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05T19:57:59.964485+0530 | INFO | ========================================================
+2026-04-05T19:57:59.964819+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T19:57:59.964969+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-05T19:57:59.965139+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T19:57:59.965284+0530 | INFO |   Input      : input
+2026-04-05T19:57:59.965393+0530 | INFO | ========================================================
+2026-04-05T19:57:59.965489+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T19:57:59.965615+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T19:58:14.994258+0530 | ERROR | Pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05T20:02:44.964242+0530 | INFO | ========================================================
+2026-04-05T20:02:44.964667+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T20:02:44.964881+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-05T20:02:44.965141+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T20:02:44.965334+0530 | INFO |   Input      : input
+2026-04-05T20:02:44.965415+0530 | INFO | ========================================================
+2026-04-05T20:02:44.965489+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T20:02:44.965551+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T20:03:00.013033+0530 | ERROR | Pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05T20:05:10.238720+0530 | INFO | ========================================================
+2026-04-05T20:05:10.239071+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T20:05:10.239278+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-05T20:05:10.239425+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T20:05:10.239501+0530 | INFO |   Input      : input
+2026-04-05T20:05:10.239580+0530 | INFO | ========================================================
+2026-04-05T20:05:10.239688+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T20:05:10.239763+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T20:05:25.265314+0530 | ERROR | Pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Invalid connection string attribute (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-04-05T20:06:50.264404+0530 | INFO | ========================================================
+2026-04-05T20:06:50.264726+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T20:06:50.264930+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-05T20:06:50.265160+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T20:06:50.265265+0530 | INFO |   Input      : input
+2026-04-05T20:06:50.265398+0530 | INFO | ========================================================
+2026-04-05T20:06:50.265523+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T20:06:50.265618+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T20:06:50.792995+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-05T20:06:50.794217+0530 | ERROR | Pipeline failed: module 'config' has no attribute 'get_ss_connection_string'
+2026-04-05T20:09:22.513961+0530 | INFO | ========================================================
+2026-04-05T20:09:22.514423+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T20:09:22.514587+0530 | INFO |   SQL Server : .\SQLEXPRESS / MedallionDB
+2026-04-05T20:09:22.514687+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T20:09:22.514850+0530 | INFO |   Input      : input
+2026-04-05T20:09:22.514949+0530 | INFO | ========================================================
+2026-04-05T20:09:22.515014+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T20:09:22.515074+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T20:09:22.515201+0530 | ERROR | Pipeline failed: module 'config' has no attribute 'get_ss_master_connection_string'
+2026-04-05T20:11:37.457692+0530 | INFO | ========================================================
+2026-04-05T20:11:37.458047+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T20:11:37.458223+0530 | INFO |   SQL Server : localhost / MedallionDB
+2026-04-05T20:11:37.458350+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T20:11:37.458448+0530 | INFO |   Input      : input
+2026-04-05T20:11:37.458621+0530 | INFO | ========================================================
+2026-04-05T20:11:37.458741+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T20:11:37.458816+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T20:11:37.952485+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-05T20:11:37.953739+0530 | ERROR | Pipeline failed: module 'config' has no attribute 'get_ss_connection_string'
+2026-04-05T20:11:59.875915+0530 | INFO | ========================================================
+2026-04-05T20:11:59.876278+0530 | INFO |   Dual-DB Medallion ETL Pipeline — Starting
+2026-04-05T20:11:59.876421+0530 | INFO |   SQL Server : localhost / MedallionDB
+2026-04-05T20:11:59.876509+0530 | INFO |   PostgreSQL : localhost:5432 / medallion_db
+2026-04-05T20:11:59.876568+0530 | INFO |   Input      : input
+2026-04-05T20:11:59.876618+0530 | INFO | ========================================================
+2026-04-05T20:11:59.876662+0530 | INFO | ══ BOOTSTRAP ════════════════════════════════════════════
+2026-04-05T20:11:59.876712+0530 | INFO |   [SQL Server] Creating database and schemas...
+2026-04-05T20:11:59.938800+0530 | INFO |   [SQL Server] Already exists: MedallionDB
+2026-04-05T20:12:00.311851+0530 | SUCCESS |   [SQL Server] Schemas ready: bronze | silver | gold | audit
+2026-04-05T20:12:00.313229+0530 | INFO |   [PostgreSQL] Creating database and schemas...
+2026-04-05T20:12:00.313802+0530 | ERROR | Pipeline failed: module 'config' has no attribute 'get_pg_master_connection_string'
